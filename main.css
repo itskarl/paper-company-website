@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   color: antiquewhite;
   background-color: black;
   font-family: 'Abel', sans-serif;
@@ -52,6 +53,7 @@ li a:hover {
   height: 600px;
   background: radial-gradient(transparent, black), url('images/backpaper1.jpg');
   background-size: 100% auto;
+  background-repeat: no-repeat;
   padding: 40px;
 }
 
@@ -61,6 +63,12 @@ li a:hover {
   background-size: 100% auto;
   height: 600px;
   padding: 40px;
+
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section3 {
@@ -78,8 +86,6 @@ li a:hover {
   opacity: 1;
 }
 
-
-
 .grid {
   font-size: 1.4em;
   display: grid;
@@ -89,7 +95,7 @@ li a:hover {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .imagefix {
@@ -108,5 +114,5 @@ li a:hover {
   font-size: 2.5em;
   margin-bottom: 20px;
   display: flex;
-  align-content: left;
+  justify-content: left;
 }

@@ -19,6 +19,8 @@ function dramaticReveal(scroll_pos) {
       content = document.getElementById('reveal2');
       content.classList.remove('hidden');
       content.classList.add('revealed');
+      content.classList.add('animated');
+      content.classList.add('fadeInLeft');
     }
     revealContent2()
   }

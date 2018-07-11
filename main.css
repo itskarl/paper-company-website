@@ -52,28 +52,35 @@ li a:hover {
   background-color: dimgrey;
   height: 600px;
   background: radial-gradient(transparent, black), url('images/backpaper1.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:scroll;
+
   padding: 40px;
 }
 
 .section2 {
   background-color: darkgrey;
   background: radial-gradient(transparent, black), url('images/backpaper2.jpg');
-  background-size: 100% auto;
-  height: 600px;
-  padding: 40px;
 
+  height: 900px;
+  padding: 100px 40px 200px 40px;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    background-size: 100% auto;
+
 }
 
 .section3 {
   background-color: gainsboro;
   height: 600px;
+  background: radial-gradient(transparent, black), url('images/backpaper3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  padding: 40px;
 }
 
 .hidden {
@@ -82,7 +89,7 @@ li a:hover {
 
 .revealed {
   transition: opacity;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   opacity: 1;
 }
 
@@ -96,6 +103,7 @@ li a:hover {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .imagefix {
@@ -104,10 +112,34 @@ li a:hover {
   padding: 5px;
 }
 
-.productimages {
-  height: 500px;
-  background-color: pink;
+.product1box {
+  padding: 10px;
+  color: black;
+  height: 300px;
   width: 300px;
+  background: url('images/product2.jpg');
+background-position: center center;
+  background-size: cover;
+}
+
+.product2box {
+  padding: 10px;
+  color: black;
+  height: 300px;
+  width: 300px;
+  background: url('images/product1.jpg');
+background-position: center center;
+  background-size: cover;
+}
+
+.product3box {
+  padding: 10px;
+  color: black;
+  height: 300px;
+  width: 300px;
+  background: url('images/product3.jpg');
+background-position: center center;
+  background-size: cover;
 }
 
 .section-title {
@@ -115,4 +147,12 @@ li a:hover {
   margin-bottom: 20px;
   display: flex;
   justify-content: left;
+}
+
+.greeting {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
 }

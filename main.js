@@ -55,3 +55,35 @@ window.addEventListener('scroll', function(e) {
   }
 
 });
+
+
+document.addEventListener('mouseover',revealDescription);
+document.addEventListener('mouseout', hideDescription);
+
+function revealDescription(){
+  product = document.getElementById('productdescription');
+  product.classList.remove('hidden');
+  product.classList.add('revealed');
+}
+function hideDescription(){
+  product = document.getElementById('productdescription');
+  product.classList.add('hidden');
+  product.classList.remove('revealed');
+}
+
+// repurpose code below
+// function hover(eClass) {
+//   var elem = document.getElementsByClassName(eClass);
+//   for (var i=0;i<elem.length;i++) {
+//     elem[i].addEventListener('mouseover', mouseOver);
+//     elem[i].addEventListener('mouseout', mouseOut);
+//   }
+//   function mouseOver() {
+//     //this.style.backgroundColor = 'red';
+//     this.style.display = 'none';
+//   }
+//   function mouseOut() {
+//     //this.style.backgroundColor = 'grey';
+//   }
+// }
+// hover('box');

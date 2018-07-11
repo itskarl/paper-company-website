@@ -6,8 +6,6 @@ function dramaticReveal(scroll_pos) {
   // var ticking = true;
 
   if (scroll_pos > 0) {
-    console.log("one")
-
     function revealContent() {
       content = document.getElementById('reveal');
       content.classList.remove('hidden');
@@ -16,9 +14,7 @@ function dramaticReveal(scroll_pos) {
     revealContent()
   }
 
-  if (scroll_pos > 700) {
-    console.log("two")
-
+  if (scroll_pos > 500) {
     function revealContent2() {
       content = document.getElementById('reveal2');
       content.classList.remove('hidden');
@@ -27,10 +23,7 @@ function dramaticReveal(scroll_pos) {
     revealContent2()
   }
 
-
-  if (scroll_pos > 1500) {
-    console.log("three")
-
+  if (scroll_pos > 900) {
     function revealContent3() {
       content = document.getElementById('reveal3');
       content.classList.remove('hidden');
@@ -40,8 +33,6 @@ function dramaticReveal(scroll_pos) {
   }
 
   if (scroll_pos > 2300) {
-    console.log("four")
-
     function revealContent4() {
       content = document.getElementById('reveal4');
       content.classList.remove('hidden');

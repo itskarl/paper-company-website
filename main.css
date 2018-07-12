@@ -23,6 +23,8 @@ body {
   text-decoration: none;
 }
 
+
+
 ul {
   list-style-type: none;
   margin: 0 30px 0 0;
@@ -50,9 +52,9 @@ li a:hover {
 }
 
 .section1 {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Abel', sans-serif;
   background-color: dimgrey;
-  height: 600px;
+  height: 100vh;
   background: radial-gradient(transparent, black), url('images/backpaper2.jpg');
   background-size: cover;
   background-attachment: scroll;
@@ -61,7 +63,7 @@ li a:hover {
 }
 
 .section2 {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Abel', sans-serif;
   background-color: darkgrey;
   background: radial-gradient(transparent, black), url('images/backpaper1.jpg');
   height: 900px;
@@ -76,10 +78,10 @@ li a:hover {
 }
 
 .section3 {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Abel', sans-serif;
   background-color: gainsboro;
   height: 600px;
-  background: radial-gradient(transparent, black), url('images/backpaper3.jpg');
+  background: radial-gradient(transparent, black), url('images/backpaper4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -99,6 +101,7 @@ li a:hover {
   opacity: 1;
 }
 
+
 .grid {
   font-size: 1.4em;
   display: grid;
@@ -111,6 +114,31 @@ li a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.form {
+grid-area: form;
+}
+
+.greet {
+grid-area: greet;
+width: 100%;
+text-align: right;
+}
+
+.get-quote {
+  grid-area: get-quote;
+}
+
+.grid-top {
+  margin: 200;
+  padding-top: 80px;
+  display: grid;
+  grid-template-areas:
+    'form greet'
+    'form get-quote';
+  grid-gap: 10px;
+}
+
 
 .imagefix {
   height: auto;
@@ -154,15 +182,70 @@ li a:hover {
 .section-title {
   font-size: 2.5em;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: left;
+}
+
+.title-text {
+  font-size: 5.6em;
+  font-weight: lighter;
+  font-family: 'Special Elite';
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
+  margin: 0;
+  text-shadow: 2px 2px 2px black;
 }
 
 .greeting {
   font-size: 1.5em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   margin: 0;
   text-shadow: 2px 2px 2px black;
+}
+
+.in-box-text {
+  font-size: 1.3em;
+  font-family: Abel, sans-serif;
+  color: black;
+  text-shadow: 0px 0px 10px white;
+}
+
+.form-container {
+
+}
+
+.form-input{
+  font-size: 100%;
+  width: 80%;
+  border: none;
+  margin: 4.5px;
+    padding: 10px;
+
+}
+
+input[type=submit] {
+    background-color: #385a91;
+    color: white;
+    border: none;
+    margin: 4.5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 200%;
+    opacity: 0.9;
+    text-shadow: none;
+    font-family: 'Abel';
+}
+
+.quick-quote-button {
+    width: 400px;
+    background-color: #385a91;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 200%;
+    opacity: 0.9;
+    text-shadow: none;
+    font-family: 'Abel';
+    float: right;
 }

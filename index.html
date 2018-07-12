@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title>OMG!PAPER</title>
+  <title>OMG PAPER</title>
   <link type="text/css" rel="stylesheet" href='main.css'>
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One|Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One|Abel|Special+Elite" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 </head>
 <h1 class="karlheader"><a href="#home" class="karlheader-link">OMG PAPER</a></h1>
@@ -21,17 +21,31 @@
 
 
   <section class="section1 animated fadeInUp">
-    <div class="hidden grid" id="reveal">
-      <div>
-        <img src="" class="imagefix">
+    <div class="hidden grid-top" id="reveal">
+      <div class="form">
+        <div class="hidden" id="invisform">
+          <form>
+            <input type="name" placeholder="NAME"  name="firstname" class="form-input"><br>
+            <input type="email" placeholder="EMAIL"  name="email" class="form-input"><br>
+            <input type="tel" placeholder="TELEPHONE" name="usrtel" class="form-input"><br>
+            <textarea type="text" placeholder="PRODUCT REQUEST AND QUANTITY" rows="3" name="text" class="form-input"></textarea><br>
+            <input type="submit" value="SUBMIT" onclick="thanksAlert()">
+          </form>
+        </div>
       </div>
-      <div>
 
-        <p class="greeting">this is OMG PAPER. </p>
-        <p class="greeting">your one stop shop for all your paper needs.</p>
-
+      <div class="greet">
+        <p class="title-text">OMG PAPER</p>
+        <p class="greeting">YOUR ONE-STOP SHOP FOR ALL YOUR PAPER NEEDS</p>
       </div>
+
+      <div class="get-quote">
+        <button onclick="showForm()" class="quick-quote-button"> GET YOUR QUICK QUOTE </button>
+      </div>
+
     </div>
+
+
   </section>
 
   <section class="section2">
@@ -42,23 +56,21 @@
       <div>
         <p style="text-shadow: 2px 2px 2px black;">PAPER STOCK</p>
         <div class="product1box">
-          <section class="hidden" id="productdescription" onmouseover="revealDescription(this)"
-          onmouseout=""="hideDescription(this)">
-            <p>Choose from our selection of over 500 types of paper!</p>
+          <section class="hidden" id="productdescription" onmouseover="revealDescription(this)" onmouseout="hideDescription(this)">
+            <p class="in-box-text">Choose from our selection of over 500 types of paper. You think it, we have it.</p>
           </section>
         </div>
       </div>
       <div>
         <p style="text-shadow: 2px 2px 2px black;">PAPER FINISHING</p>
         <div class="product2box">
-          <p class="hidden" id="productdescription" >texttext</p>
+          <p class="hidden in-box-text" id="productdescription2" onmouseover="revealDescription2(this)" onmouseout="hideDescription2(this)">Design custom cuts and scores. order it online in minutes. Save your designs for future orders.</p>
         </div>
       </div>
       <div>
         <p style="text-shadow: 2px 2px 2px black;">SPECIALTY PAPER</p>
         <div class="product3box">
-          <p class="hidden" id="productdescription" onmouseover="revealDescription(this)"
-          onmouseout="hideDescription(this)">texttext</p>
+          <p class="hidden in-box-text" id="productdescription3" onmouseover="revealDescription3(this)" onmouseout="hideDescription3(this)">Specialty paper available for wedding invitations, craft purposes, card stock, and more!</p>
         </div>
       </div>
     </div>

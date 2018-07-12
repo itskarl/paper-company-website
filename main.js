@@ -48,8 +48,10 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+
 document.getElementById("productdescription").onmouseover = function() {revealDescription()};
 document.getElementById("productdescription").onmouseout = function() {hideDescription()};
+
 function revealDescription(){
   product = document.getElementById('productdescription');
   product.classList.remove('hidden');
@@ -59,6 +61,51 @@ function hideDescription(){
   product = document.getElementById('productdescription');
   product.classList.add('hidden');
   product.classList.remove('revealed');
+}
+
+//
+
+document.getElementById("productdescription2").onmouseover = function() {revealDescription2()};
+document.getElementById("productdescription2").onmouseout = function() {hideDescription2()};
+
+function revealDescription2(){
+  product = document.getElementById('productdescription2');
+  product.classList.remove('hidden');
+  product.classList.add('revealed');
+}
+function hideDescription2(){
+  product = document.getElementById('productdescription2');
+  product.classList.add('hidden');
+  product.classList.remove('revealed');
+}
+
+//
+
+document.getElementById("productdescription3").onmouseover = function() {revealDescription3()};
+document.getElementById("productdescription3").onmouseout = function() {hideDescription3()};
+
+function revealDescription3(){
+  product = document.getElementById('productdescription3');
+  product.classList.remove('hidden');
+  product.classList.add('revealed');
+}
+function hideDescription3(){
+  product = document.getElementById('productdescription3');
+  product.classList.add('hidden');
+  product.classList.remove('revealed');
+}
+
+
+function showForm() {
+  product = document.getElementById('invisform');
+  product.classList.remove('hidden');
+  product.classList.add('revealed');
+  product.classList.add('animated');
+  product.classList.add('bounceInLeft');
+}
+
+function thanksAlert() {
+  alert('Thank you! A representative will contact you shortly.')
 }
 
 

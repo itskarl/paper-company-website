@@ -14,7 +14,7 @@ function dramaticReveal(scroll_pos) {
     revealContent()
   }
 
-  if (scroll_pos > 500) {
+  if (scroll_pos > 650) {
     function revealContent2() {
       content = document.getElementById('reveal2');
       content.classList.remove('hidden');
@@ -34,14 +34,6 @@ function dramaticReveal(scroll_pos) {
     revealContent3()
   }
 
-  if (scroll_pos > 2300) {
-    function revealContent4() {
-      content = document.getElementById('reveal4');
-      content.classList.remove('hidden');
-      content.classList.add('revealed');
-    }
-    revealContent4()
-  }
 }
 
 window.addEventListener('scroll', function(e) {
@@ -56,10 +48,8 @@ window.addEventListener('scroll', function(e) {
 
 });
 
-
-document.addEventListener('mouseover',revealDescription);
-document.addEventListener('mouseout', hideDescription);
-
+document.getElementById("productdescription").onmouseover = function() {revealDescription()};
+document.getElementById("productdescription").onmouseout = function() {hideDescription()};
 function revealDescription(){
   product = document.getElementById('productdescription');
   product.classList.remove('hidden');
@@ -70,6 +60,7 @@ function hideDescription(){
   product.classList.add('hidden');
   product.classList.remove('revealed');
 }
+
 
 // repurpose code below
 // function hover(eClass) {

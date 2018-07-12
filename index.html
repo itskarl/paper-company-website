@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title></title>
+  <title>OMG!PAPER</title>
   <link type="text/css" rel="stylesheet" href='main.css'>
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One|Abel" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 </head>
 <h1 class="karlheader"><a href="#home" class="karlheader-link">OMG PAPER</a></h1>
@@ -27,44 +27,48 @@
       </div>
       <div>
 
-        <p class="greeting">This is OMG PAPER. </p>
-        <p class="greeting">Your one stop shop for all your paper needs.</p>
+        <p class="greeting">this is OMG PAPER. </p>
+        <p class="greeting">your one stop shop for all your paper needs.</p>
 
       </div>
     </div>
   </section>
 
   <section class="section2">
-    <div class="grid section-title">OUR PRODUCTS
+
+    <div class="section-title">OUR PRODUCTS
     </div>
     <div class="hidden grid" id="reveal2">
       <div>
-        <p>PAPER STOCK</p>
+        <p style="text-shadow: 2px 2px 2px black;">PAPER STOCK</p>
         <div class="product1box">
-          <p class="hidden" id="productdescription">Choose from our selection of over 500 types of paper!</p>
+          <section class="hidden" id="productdescription" onmouseover="revealDescription(this)"
+          onmouseout=""="hideDescription(this)">
+            <p>Choose from our selection of over 500 types of paper!</p>
+          </section>
         </div>
       </div>
       <div>
-        <p>PAPER FINISHING</p>
+        <p style="text-shadow: 2px 2px 2px black;">PAPER FINISHING</p>
         <div class="product2box">
-          <p class="hidden" id="pro ductdescription">texttext</p>
+          <p class="hidden" id="productdescription" >texttext</p>
         </div>
       </div>
       <div>
-        <p>SPECIALTY PAPER</p>
+        <p style="text-shadow: 2px 2px 2px black;">SPECIALTY PAPER</p>
         <div class="product3box">
-          <p class="hidden" id="pro ductdescription">texttext</p>
+          <p class="hidden" id="productdescription" onmouseover="revealDescription(this)"
+          onmouseout="hideDescription(this)">texttext</p>
         </div>
       </div>
-
-
     </div>
+
   </section>
 
 
   <section class="section3">
     <div class="hidden grid" id="reveal3">
-      <div><i>Fill your paper with the breathings of your heart.<i/></div>
+      <div><i>Fill your paper with the breathings of your heart.</i></div>
       <div><img src=""></div>
     </div>
   </section>
@@ -72,9 +76,10 @@
 
 
 
-  <script src=main.js></script>
+
 
   <footer>
+
     <ul>
       <li><a href="">ABOUT</a></li>
       <li><a href="">PRODUCTS</a></li>
@@ -83,6 +88,7 @@
     </ul>
   </footer>
 
+  <script src=main.js></script>
 </body>
 
 

@@ -1,14 +1,14 @@
 body {
   height: 100%;
   color: antiquewhite;
-  background-color: black;
+  background-color: #02132d;
   font-family: 'Abel', sans-serif;
   margin: 0 0 0 0;
 }
 
 .karlheader {
   color: antiquewhite;
-  background-color: black;
+  background-color: #02132d;
   font-size: 2em;
   font-family: 'Abel', sans-serif;
   float: left;
@@ -19,16 +19,16 @@ body {
 .karlheader-link {
   color: #fff;
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 30px;
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 30px 0 0;
   padding: 0;
   overflow: hidden;
-  position: relative;
+  position: static;
 }
 
 li {
@@ -44,24 +44,26 @@ li a {
 }
 
 li a:hover {
-  background-color: dimgrey;
+  background-color: #002760;
   border-radius: 0px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .section1 {
+  font-family: 'Julius Sans One', sans-serif;
   background-color: dimgrey;
   height: 600px;
-  background: radial-gradient(transparent, black), url('images/backpaper1.jpg');
+  background: radial-gradient(transparent, black), url('images/backpaper2.jpg');
   background-size: cover;
-  background-attachment:scroll;
-
+  background-attachment: scroll;
   padding: 40px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .section2 {
+  font-family: 'Julius Sans One', sans-serif;
   background-color: darkgrey;
-  background: radial-gradient(transparent, black), url('images/backpaper2.jpg');
-
+  background: radial-gradient(transparent, black), url('images/backpaper1.jpg');
   height: 900px;
   padding: 100px 40px 200px 40px;
   height: 100%;
@@ -69,11 +71,12 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    background-size: 100% auto;
-
+  background-size: 100% auto;
+  box-shadow: 5px 5px 10px black;
 }
 
 .section3 {
+  font-family: 'Julius Sans One', sans-serif;
   background-color: gainsboro;
   height: 600px;
   background: radial-gradient(transparent, black), url('images/backpaper3.jpg');
@@ -81,15 +84,18 @@ li a:hover {
   background-repeat: no-repeat;
   height: 600px;
   padding: 40px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .hidden {
   opacity: 0;
+  transition: opacity;
+  transition-duration: 2s;
 }
 
 .revealed {
   transition: opacity;
-  transition-duration: 1s;
+  transition-duration: 2s;
   opacity: 1;
 }
 
@@ -97,12 +103,12 @@ li a:hover {
   font-size: 1.4em;
   display: grid;
   grid-template-rows: ;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% ;
   grid-gap: 0px;
-  margin: 0;
+  margin: 15;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -113,33 +119,36 @@ li a:hover {
 }
 
 .product1box {
-  padding: 10px;
+  padding: 20px;
   color: black;
-  height: 300px;
-  width: 300px;
+  height: 310px;
+  width: 250px;
   background: url('images/product2.jpg');
-background-position: center center;
+  background-position: center center;
   background-size: cover;
+  box-shadow: 5px 5px 10px;
 }
 
 .product2box {
-  padding: 10px;
+  padding: 20px;
   color: black;
-  height: 300px;
-  width: 300px;
+  height: 310px;
+  width: 250px;
   background: url('images/product1.jpg');
-background-position: center center;
+  background-position: center center;
   background-size: cover;
+  box-shadow: 5px 5px 10px;
 }
 
 .product3box {
-  padding: 10px;
+  padding: 20px;
   color: black;
-  height: 300px;
-  width: 300px;
+  height: 310px;
+  width: 250px;
   background: url('images/product3.jpg');
-background-position: center center;
+  background-position: center center;
   background-size: cover;
+  box-shadow: 5px 5px 10px;
 }
 
 .section-title {
@@ -155,4 +164,5 @@ background-position: center center;
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0;
+  text-shadow: 2px 2px 2px black;
 }

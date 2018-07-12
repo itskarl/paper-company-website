@@ -1,14 +1,13 @@
 body {
   height: 100%;
   color: antiquewhite;
-  background-color: #02132d;
+  background-color: #10152d;
   font-family: 'Abel', sans-serif;
   margin: 0 0 0 0;
 }
 
 .karlheader {
   color: antiquewhite;
-  background-color: #02132d;
   font-size: 2em;
   font-family: 'Abel', sans-serif;
   float: left;
@@ -22,8 +21,6 @@ body {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
 }
-
-
 
 ul {
   list-style-type: none;
@@ -101,28 +98,27 @@ li a:hover {
   opacity: 1;
 }
 
-
 .grid {
   font-size: 1.4em;
   display: grid;
   grid-template-rows: ;
-  grid-template-columns: 30% ;
+  grid-template-columns: 30%;
   grid-gap: 0px;
-  margin: 15;
-  padding: 0;
+
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .form {
-grid-area: form;
+  grid-area: form;
 }
 
 .greet {
-grid-area: greet;
-width: 100%;
-text-align: right;
+  grid-area: greet;
+  width: 100%;
+  text-align: right;
 }
 
 .get-quote {
@@ -133,12 +129,22 @@ text-align: right;
   margin: 200;
   padding-top: 80px;
   display: grid;
-  grid-template-areas:
-    'form greet'
-    'form get-quote';
+  grid-template-areas: 'form greet' 'form get-quote';
   grid-gap: 10px;
 }
 
+.grid-bottom {
+  font-size: 1.7em;
+  font-family: 'Special Elite';
+  font-weight: 100;
+  text-align: center;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 3px 3px 3px black;
+
+}
 
 .imagefix {
   height: auto;
@@ -208,44 +214,54 @@ text-align: right;
   text-shadow: 0px 0px 10px white;
 }
 
-.form-container {
+.form-container {}
 
-}
-
-.form-input{
+.form-input {
   font-size: 100%;
   width: 80%;
   border: none;
   margin: 4.5px;
-    padding: 10px;
-
+  padding: 10px;
 }
 
 input[type=submit] {
-    background-color: #385a91;
-    color: white;
-    border: none;
-    margin: 4.5px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 200%;
-    opacity: 0.9;
-    text-shadow: none;
-    font-family: 'Abel';
+  background-color: white;
+  color: #10152d;
+  border: none;
+  margin: 4.5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 200%;
+  opacity: 0.9;
+  text-shadow: none;
+  font-family: 'Abel';
+}
+
+.subscribe {
+  background-color: #e5eefc;
+  color: white;
+  border: none;
+  margin: 4.5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 200%;
+  opacity: 0.9;
+  text-shadow: none;
+  font-family: 'Abel';
 }
 
 .quick-quote-button {
-    width: 400px;
-    background-color: #385a91;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 200%;
-    opacity: 0.9;
-    text-shadow: none;
-    font-family: 'Abel';
-    float: right;
+  width: 400px;
+  background-color: white;
+  color: #10152d;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 200%;
+  opacity: 0.9;
+  text-shadow: none;
+  font-family: 'Abel';
+  float: right;
+  box-shadow: 3px 3px 5px black;
 }

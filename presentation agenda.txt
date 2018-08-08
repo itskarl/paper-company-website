@@ -1,0 +1,23 @@
+IDEATION
+Style: startup look
+Research
+B2B model
+
+PROCESS
+ELEMENTS INTRODUCED
+- animation slide in
+- fade in
+- stuff from class
+- new stuff
+- form pop
+
+CONCLUSION
+
+FAVORITES
+- drop shadows
+- parallax
+- radial blur
+
+PROBLEMS
+- mouseover event over whole page instead of element
+

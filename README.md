@@ -1,6 +1,6 @@
 # PAPER COMPANY PROJECT
 
-![desktop](images/desktop.gif)
+![desktop](images/desktop.png)
 
 ### DESCRIPTION
 The project goal was to design and mock up a faux company website, utilizing all skills learned in JS, CSS, and HTML.

@@ -4,9 +4,10 @@
 
 ### DESCRIPTION
 Assignment: to design and mock up a faux company website, utilizing all skills learned in JS, CSS, and HTML.
+This is my first site ever utilizing these languages. There's no functionality yet to the site. This is just a front-page design.
 
 ### DESIGN
-This site was designed with simplicity in mind. The site is designed to appear similar to other start-up sites: sleek and simple. My company, OMG Paper is a B to B company providing services to other companies' paper needs.
+This site was designed with simplicity in mind. I wanted it to look like other start-up sites: sleek and simple. My company, OMG Paper is a B to B company providing services to other companies' paper needs.
 
 ### LANGUAGES USED
 HTML, CSS, JAVASCRIPT
